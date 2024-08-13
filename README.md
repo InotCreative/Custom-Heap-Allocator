@@ -79,6 +79,7 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+```
 
 Worst Code Example
 The code provided above is the worst-case scenario for a custom heap allocator. It relies heavily on the sbrk system call, which is considered unsafe and outdated in modern systems programming. Here’s why:
