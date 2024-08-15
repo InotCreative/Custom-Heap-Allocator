@@ -67,6 +67,8 @@ blockMeta *requestSpace(blockMeta *last, size_t size) {
         */
     }
 
+    if (last) last->next = block;
+
     block->size = size;
     block->next = NULL;
     block->free = 0;
